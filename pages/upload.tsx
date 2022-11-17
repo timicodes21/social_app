@@ -61,6 +61,7 @@ const Upload = () => {
           _type: "postedBy",
           _ref: userProfile?._id,
         },
+        topic: category,
       };
       await axios.post(`${BASE_URL}/api/post`, document);
       router.push("/");
